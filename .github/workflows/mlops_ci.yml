@@ -10,6 +10,9 @@ jobs:
   test-and-train:
     runs-on: ubuntu-latest
 
+    env:
+      PYTHONPATH: .
+
     steps:
       - name: Checkout du dépôt
         uses: actions/checkout@v4
